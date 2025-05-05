@@ -3,46 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Dice Generator</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #5ea352;
-    }
-    h1 {
-      color: #050202;
-    }
-    img {
-      width: 45px;
-      height: 45px;
-      object-fit: cover; 
-      margin-top: 0px;
-    }
-    select, button {
-      padding: 10px;
-      font-size: 16px;
-      margin: 10px;
-      background-color: #ffffff;
-      color: rgb(0, 0, 0);
-      border: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #bbbaba;
-    }
-    #result {
-      font-size: 24px;
-      margin-top: 20px;
-      color: #090b0e;
-    }
-  </style>
+  <!-- Link to external CSS stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <h1><img src="https://cdn.pixabay.com/photo/2017/08/31/04/01/d20-2699387_960_720.png" alt="d20"> Dice Generator</h1>
+  <h1>
+    <img src="https://cdn.pixabay.com/photo/2017/08/31/04/01/d20-2699387_960_720.png" alt="d20"> 
+    Dice Generator
+  </h1>
 
   <label for="dice">Choose your dice:</label>
   <select id="dice">
@@ -57,6 +26,8 @@
   <button id="rollButton">Roll Dice</button>
 
   <div id="result"></div>
+
+  <!-- JavaScript files -->
   <script src="js/rollDice.js"></script>
   <script src="js/script.js"></script>
   
